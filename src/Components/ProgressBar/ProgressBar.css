@@ -1,0 +1,64 @@
+.progressbar {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: #00000090;
+  display: grid;
+}
+
+.progressbar-container {
+  place-self: center;
+  width: max(32vw, 330px);
+  color: #808080;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 25px 30px;
+  border-radius: 8px;
+  font-size: 16px;
+  animation: fadeIn 0.5s;
+}
+
+h2 {
+  text-align: center;
+}
+
+.progressbar-input {
+  width: 100%;
+}
+
+.progressbar-input .inputdata {
+  height: 50px;
+}
+
+.select-box {
+  height: 50px;
+}
+
+.radiobtn {
+  height: 30px;
+  width: 30px;
+}
+
+.nextBtn {
+  border: none;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 35%;
+  padding: 10px;
+  border-radius: 4px;
+  color: white;
+  background-color: tomato;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+@media (max-width:768px) {
+  .nextBtn {
+    margin-left: 30px;
+  }
+}
